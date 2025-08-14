@@ -3,8 +3,9 @@ import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ImbModule } from './imb/imb.module';
 import { UserModule } from './user/user.module';
+import { ImbPtsModule } from './imb_pts/imb_pts.module';
+import { ImbModule } from './imb/imb.module';
 
 @Module({
   imports: [
