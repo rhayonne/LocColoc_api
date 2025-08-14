@@ -1,1 +1,3 @@
-export class CreateImbDto {}
+export class CreateImbDto {
+    
+}
