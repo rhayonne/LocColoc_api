@@ -1,0 +1,63 @@
+{
+  "project": "loccoloc-monorepo",
+  "version": "1.0",
+  "context": {
+    "workspaces": [
+      "apps/*",
+      "libs/*"
+    ],
+    "include": [
+      "**/*.ts",
+      "**/*.tsx",
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.json",
+      "**/*.md",
+      "**/*.mjs"
+    ],
+    "exclude": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/.next/**",
+      "**/build/**",
+      "**/coverage/**",
+      "**/.git/**"
+    ]
+  },
+  "instructions": [
+    "Sempre comunique-se com o usuário em português, salvo quando solicitado o contrário.",
+    "Este é um monorepo que contém aplicativos ('apps/*') e bibliotecas ('libs/*').",
+    "Considere o contexto completo do projeto ao criar novos componentes para garantir a consistência do design, tipagem e organização."
+  ],
+  "ide": {
+    "autoIndex": true,
+    "analyzeDependencies": true
+  },
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "<YOUR_TOKEN_HERE>"
+      }
+    },
+    "figma": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-figma"],
+      "env": {
+        "FIGMA_ACCESS_TOKEN": "<YOUR_TOKEN_HERE>"
+      }
+    },
+    "mongodb": {
+      "command": "npx",
+      "args": ["-y", "@smithery/npm-mongodb-mcp-server"],
+      "env": {
+        "MONGODB_URI": "mongodb://localhost:27017/macoloc"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    }
+  }
+}

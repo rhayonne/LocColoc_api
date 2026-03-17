@@ -9,7 +9,8 @@
   "editor.detectIndentation": false,
 
   // --- ESLint + Flat Config (eslint.config.mjs) ---
-  "eslint.validate": ["typescript"],
+  "eslint.workingDirectories": [{ "mode": "auto" }],
+  "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
