@@ -19,16 +19,16 @@ export class TypePropertyController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.typePropertyService.findOne(+id);
+    return this.typePropertyService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateTypePropertyDto: UpdateTypePropertyDto) {
-    return this.typePropertyService.update(+id, updateTypePropertyDto);
+    return this.typePropertyService.update(id, updateTypePropertyDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.typePropertyService.remove(+id);
+    return this.typePropertyService.remove(id);
   }
 }

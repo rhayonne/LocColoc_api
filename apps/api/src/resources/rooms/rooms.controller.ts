@@ -21,7 +21,7 @@ export class RoomsController {
   @Post(':propertyId')
   createRoomInProperty(
     @Body(ValidationPipe) createRoomDto: CreateRoomDto,
-    @Param('porpertyId') propertyId: string,
+    @Param('propertyId') propertyId: string,
     @Request() req: any,
   ) {
     return this.roomsService.create(createRoomDto, propertyId, req.user.userId);
@@ -65,7 +65,8 @@ export class RoomsController {
   // }
 
   @Delete(':id')
-  remove(@Param('id') id: string, ownerId: string) {
+  remove(@Param('id') id: string, @Request() req: any) {
+    const ownerId = req.user.userId;
     return this.roomsService.remove(id, ownerId);
   }
 }

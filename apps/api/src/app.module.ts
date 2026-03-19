@@ -12,6 +12,9 @@ import { APP_FILTER, APP_GUARD } from '@nestjs/core';
 // import { AuthGuard } from '@nestjs/passport';
 import { HttpExceptionFilter } from './util/errors/http-exceptions';
 import { EquipementsModule } from './resources/equipements/equipements.module';
+import { PropertyModule } from './resources/property/property.module';
+import { RoomsModule } from './resources/rooms/rooms.module';
+import { TypePropertyModule } from './resources/types_property/type_property.module';
 import { Guard } from './auth/guards/jwt-auth-guard';
 import { ContractModule } from './contract/contract.module';
 import { ScheduleModule } from '@nestjs/schedule';
@@ -32,6 +35,9 @@ import { ScheduleModule } from '@nestjs/schedule';
     EquipementsModule,
     ContractModule,
     ScheduleModule,
+    PropertyModule,
+    RoomsModule,
+    TypePropertyModule,
   ],
   controllers: [AppController, AuthController],
   providers: [
