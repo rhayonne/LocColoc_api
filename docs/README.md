@@ -1,5 +1,8 @@
 # 📚 Documentation Index
 
+---
+🌎 Languages: [**English**](./README.md) | [Français](./README.fr.md) | [Português (BR)](./README.pt-br.md)
+---
 Welcome to the LocColoc API documentation! This directory contains complete documentation for all aspects of the system.
 
 ---
@@ -9,6 +12,9 @@ Welcome to the LocColoc API documentation! This directory contains complete docu
 ```
 docs/
 ├── README.md                          # This file - Documentation index
+├── ARCHITECTURE.md                    # 🏗️ System Architecture & Monorepo Structure
+├── USE_CASES.md                       # 👥 User Roles & Use Cases Diagrams
+├── ERD_DIAGRAM.md                     # 🗄️ Entity-Relationship Database Diagram
 ├── api/                               # API endpoint documentation
 │   ├── USER.md                       # User management API
 │   ├── PROPERTY.md                   # Property management API
@@ -34,8 +40,10 @@ docs/
 
 ### Looking for Something Specific?
 
+- **Architecture Details**: See [Architecture Diagram](./ARCHITECTURE.md)
+- **User Roles & Use Cases**: See [Use Cases Diagrams](./USE_CASES.md)
 - **API Endpoints**: See [API Documentation](#api-documentation)
-- **Database Structure**: See [Database Schemas](#database-schemas)
+- **Database Structure (ERD)**: See [Entity-Relationship Diagram](./ERD_DIAGRAM.md) and [Database Schemas](#database-schemas)
 - **Testing**: See [Testing Guide](./guides/TESTING.md)
 - **Room System**: See [Rooms-Property Guide](./guides/ROOMS_PROPERTY_RELATIONSHIP.md)
 

@@ -7,10 +7,13 @@ All documentation has been organized in the `/docs` directory with the following
 ### 📁 Directory Structure
 
 ```
-loccoloc_api/
+loccoloc-monorepo/
 ├── README.md                                    # Main project README
 └── docs/                                        # 📚 Complete documentation
     ├── README.md                               # Documentation index & navigation
+    ├── ARCHITECTURE.md                         # 🏗️ Architecture diagram
+    ├── USE_CASES.md                            # 👥 Use cases diagrams
+    ├── ERD_DIAGRAM.md                          # 🗄️ Database ERD diagram
     ├── api/                                    # API endpoint documentation
     │   ├── USER.md                            # User management API
     │   ├── PROPERTY.md                        # Property management API
@@ -31,6 +34,9 @@ loccoloc_api/
 ### 🏠 Main Documentation
 - **README.md** (root) - Quick start guide with links to all documentation
 - **docs/README.md** - Complete documentation index with navigation
+- **docs/ARCHITECTURE.md** - System Architecture details & Monorepo structure
+- **docs/USE_CASES.md** - User Roles & Use Cases Diagrams
+- **docs/ERD_DIAGRAM.md** - Entity-Relationship Database Diagram
 
 ### 🔌 API Documentation (docs/api/)
 1. **USER.md** - User management endpoints

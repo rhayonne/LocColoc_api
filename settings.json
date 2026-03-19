@@ -25,5 +25,10 @@
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true
-  }
+  },
+  "typescript.tsserver.maxTsServerMemory": 4096,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "explorer.confirmDelete": false,
+  "search.useIgnoreFiles": true
 }

@@ -1,5 +1,8 @@
-# LocColoc API
+# LocColoc APP
 
+---
+🌎 Languages: [**English**](./README.md) | [Français](./README.fr.md) | [Português (BR)](./README.pt-br.md)
+---
 Property rental management system built with NestJS and MongoDB.
 
 ## 📚 Documentation
@@ -8,6 +11,9 @@ Complete documentation is available in the [`/docs`](./docs) directory.
 
 ### Quick Links
 
+- **[System Architecture](./docs/ARCHITECTURE.md)** - Monorepo & macro architecture overview
+- **[System Use Cases](./docs/USE_CASES.md)** - Visual use case diagrams
+- **[ERD Diagram](./docs/ERD_DIAGRAM.md)** - Database entity relationships
 - **[Complete Documentation](./docs/README.md)** - Start here for full system overview
 - **[API Reference](./docs/api/)** - Detailed endpoint documentation
 - **[Database Schemas](./docs/schemas/DATABASE_SCHEMAS.md)** - MongoDB schema reference
@@ -93,6 +99,9 @@ GET    /types-property          # List property types
 
 ## 🏗️ System Architecture
 
+Please refer to the detailed [**Architecture Diagram**](./docs/ARCHITECTURE.md), [**Use Cases**](./docs/USE_CASES.md), and [**ERD Database Diagram**](./docs/ERD_DIAGRAM.md) inside the `docs/` folder for comprehensive Mermaid.js diagrams.
+
+Here is a simplified overview:
 ```
 ┌─────────────┐
 │    User     │
@@ -193,19 +202,26 @@ See [Testing Guide](./docs/guides/TESTING.md) for detailed test scenarios.
 
 ## 📂 Project Structure
 
-```
-loccoloc_api/
-├── src/
-│   ├── resources/
-│   │   ├── user/           # User management
-│   │   ├── property/       # Property management
-│   │   ├── rooms/          # Room management
-│   │   ├── garant/         # Guarantor management
-│   │   ├── types_property/ # Property types
-│   │   └── support/        # Shared utilities
-│   └── main.ts
-├── docs/                   # 📚 Complete documentation
+```text
+loccoloc-monorepo/
+├── apps/
+│   ├── api/                # NestJS Backend API
+│   │   ├── src/
+│   │   │   ├── resources/
+│   │   │   │   ├── user/           # User management
+│   │   │   │   ├── property/       # Property management
+│   │   │   │   ├── rooms/          # Room management
+│   │   │   │   ├── garant/         # Guarantor management
+│   │   │   │   ├── types_property/ # Property types
+│   │   │   │   └── support/        # Shared utilities
+│   │   │   └── main.ts
+│   └── web/                # (Future) Frontend Application
+├── libs/                   # (Future) Shared libraries and UI components
+├── docs/                   # 📚 Complete documentation & diagrams
 │   ├── README.md          # Documentation index
+│   ├── ARCHITECTURE.md    # System Architecture Diagram
+│   ├── USE_CASES.md       # Use Cases Diagrams
+│   ├── ERD_DIAGRAM.md     # Entity-Relationship diagram
 │   ├── api/               # API endpoint docs
 │   ├── schemas/           # Database schemas
 │   └── guides/            # How-to guides
